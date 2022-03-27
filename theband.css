@@ -5,6 +5,27 @@
   text-decoration: none;
   list-style: none;
   font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half {
+  width: 50%;
 }
 
 .header {
@@ -15,9 +36,11 @@
   top: 0;
   z-index: 1;
 }
+
 .nav {
   display: inline-block;
 }
+
 .nav li {
   display: inline-block;
   position: relative;
@@ -83,9 +106,11 @@
   margin-top: 46px;
   position: relative;
 }
+
 .slider img {
   width: 100%;
 }
+
 .slider .text-content {
   position: absolute;
   bottom: 38px;
@@ -93,9 +118,11 @@
   width: 100%;
   text-align: center;
 }
+
 .slider .text-content .text-heading {
   font-weight: 500;
 }
+
 .text-content .text-lorem {
   margin-top: 25px;
 }
@@ -105,8 +132,9 @@
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0;
+  padding: 64px 0 112px;
 }
+
 .content-heading {
   font-size: 30px;
   font-weight: 400;
@@ -118,51 +146,62 @@
   color: gray;
   font-style: italic;
 }
+
 .content-heading,
 .slogan {
   text-align: center;
 }
+
 .content .about-text {
   margin-top: 25px;
   text-align: justify;
   line-height: 1.6;
   font-size: 15px;
 }
+
 .content .band-member {
   display: flex;
   margin-top: 48px;
   justify-content: space-around;
 }
+
 .band-member img {
   border-radius: 4px;
   margin-top: 15px;
   width: 154px;
 }
+
 .content .name-member {
   text-align: center;
 }
+
 .tour-section {
   background-color: #000;
 }
+
 .tour-section .content-heading {
   color: #fff;
 }
+
 .tickets {
   background-color: #fff;
   margin-top: 40px;
 }
+
 .tickets li {
   font-size: 15px;
   padding: 11px 16px;
   border-bottom: 1px #ddd solid;
   color: #757575;
 }
+
 .tickets .sold-out {
   background-color: #f44336;
   color: #fff;
   padding: 3px 4px;
   margin-left: 15px;
 }
+
 .tickets .ticket-number {
   float: right;
   width: 25px;
@@ -173,4 +212,120 @@
   text-align: center;
   line-height: 25px;
   margin-top: -3px;
+}
+/* places */
+.list-places {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px -8px 0 -8px;
+}
+
+.places-item img {
+  width: 100%;
+  display: block;
+}
+
+.places-item img:hover {
+  opacity: 0.6;
+}
+
+.places-item {
+  padding: 0 8px;
+  padding-bottom: 20px;
+}
+
+.places-content {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.places-heading {
+  font-size: 15px;
+}
+
+.places-time {
+  margin: 15px 0;
+  color: #757575;
+}
+
+.places-text {
+  line-height: 1.4;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.btn-ticket {
+  padding: 11px 16px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.btn-hover:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+/* Contact begin*/
+.col-full {
+  width: 100%;
+}
+
+.contact {
+  margin-top: 47px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.contact-info p i {
+  width: 35px;
+}
+.form-control {
+  padding: 10px;
+  border: 1px #ccc solid;
+  outline: none;
+  font-size: 15px;
+}
+.form-control:focus {
+  border: #000 2px solid;
+  border-radius: 4px;
+}
+.display {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.display > .form-control {
+  margin-bottom: 10px;
+  width: 48%;
+}
+.submit {
+  margin-top: 16px;
+  background-color: #000;
+  color: #fff;
+  border: #000;
+  padding: 9.5px 22.5px;
+  float: right;
+}
+/* END contact */
+.img-map img {
+  width: 100%;
+}
+/* Bengin footer */
+.footer {
+  padding: 64px 16px;
+  text-align: center;
+  font-size: 24px;
+}
+.footer i {
+  color: #757575;
+}
+.w3school a {
+  color: #757575;
+  text-decoration: underline;
+}
+.footer i:hover {
+  opacity: 0.7;
 }
